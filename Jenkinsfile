@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Get code from GitHub') {
             steps {
-                git 'https://github.com/slezinskiy/ci-cd-tutorial-sample-app.git'
+                git 'git@github.com:slezinskiy/ci-cd-tutorial-sample-app.git'
             }
         }
         stage('Run tests') {
