@@ -10,15 +10,15 @@ pipeline {
             steps {
                 sh 'ls -la'
             }
-            post {
+           /* post {
                 success {
                     build job: 'your-build-job'
                 }
-            }
+            }*/
         }
         stage('Build Docker image') {
             steps {
-                #sh 'docker build -t your-image-name .'
+              //  #sh 'docker build -t your-image-name .'
                 echo "build docker"
 
             }
